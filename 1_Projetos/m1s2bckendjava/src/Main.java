@@ -19,6 +19,7 @@ public class Main {
         String nomeCompleto = scanner.nextLine();
         System.out.println("Idade: ");
         int idade = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Endereço: ");
         String endereco = scanner.nextLine();
 

@@ -6,25 +6,13 @@ public class HandsOn {
 
         String[] alunos;
         double[] medias;
-        double mediaTurma = 0;
 
-        System.out.println("Qual será a quantidade de alunos? ");
-        int qtdAlunos = scanner.nextInt();
+        System.out.println("Quantidade de Alunos: ");
+        int quantidadeAlunos = scanner.nextInt();
         scanner.nextLine();
 
-        alunos = new String[qtdAlunos];
-        medias = new double[qtdAlunos];
-
-        for (int i = 0; i < qtdAlunos; i++) {
-            System.out.println("Nome do Aluno: ");
-            alunos[i] = scanner.nextLine();
-            System.out.println("Média do aluno: ");
-            medias[i] = scanner.nextDouble();
-            scanner.nextLine();
-
-            mediaTurma += medias[i];
-        }
-        System.out.println("Média da turma: " + mediaTurma / qtdAlunos);
+        alunos = new String[quantidadeAlunos];
+        medias = new double[quantidadeAlunos];
 
         scanner.close();
     }
